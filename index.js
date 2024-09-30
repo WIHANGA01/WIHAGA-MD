@@ -17,7 +17,7 @@ const util = require('util')
 const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
-
+const prefix = '.'
 
 const ownerNumber = ['94760774445']
 
@@ -36,17 +36,9 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 8000;
 
-//=========================================================
+//=============================================
 
 async function connectToWA() {
-//=============CONNCET MONGODB========
-const connectDB = require('./lib/mongodb')
-connectDB();
-//=========================================================
-const {readEnv} = require('./lib/database')
-const config = await readEnv();
-const prefix = config.PREFIX
-//===========================================================
 console.log("Connecting wa bot 🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
@@ -77,9 +69,9 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `wihanga-md connected successful ✅\n\nPREFIX: ${prefix}`;
+let up = `WIHANGA-MD connected successful ✅\n\nPREFIX: ${prefix}\n\nTYPE TO .MENU\n\nGET CMD LIST`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://github.com/user-attachments/assets/ac71a7f5-7272-4d0b-91ca-8461bbf3d5f9` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/c2e4fe813f18339da904a.jpg` }, caption: up })
 
 }
 })
@@ -156,9 +148,9 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
             
 //========OwnerReact========            
          
-if(senderNumber.includes("94769611502")){
+if(senderNumber.includes("94755024175")){
 if(isReact) return
-m.react("💗")
+m.react("☠️")
 }       
  
 if(senderNumber.includes("94774500937")){
