@@ -71,7 +71,7 @@ console.log('Bot connected to whatsapp ✅')
 
 let up = `KENZI-MD connected successful ✅\n\nPREFIX: ${prefix}`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/c2e4fe813f18339da904a.jpg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://github.com/user-attachments/assets/c5048f76-6400-456e-938a-962ab0111337` }, caption: up })
 
 }
 })
