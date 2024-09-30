@@ -18,7 +18,7 @@ const util = require('util')
 const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
-const prefix = '.'
+
 
 const ownerNumber = ['94760774445']
 
@@ -41,9 +41,13 @@ const port = process.env.PORT || 8000;
 
 async function connectToWA() {
 //=========connect mongodb======
-const connectDB = require(./lib/mongodb)
+const connectDB = require('./lib/mongodb')
+const config = await readEnv();
+const prefix = config.PREFIX
+//===============================
 connectDB();
 //===================================
+const {readEnv} = require('./lib/database')
 console.log("Connecting wa bot 🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
