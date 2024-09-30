@@ -25,7 +25,8 @@ if (!args[0]) {
     
         const result = await fg.fbdl(args[0]);
         const tex = `
-  *Video Details* 
+  *-WIHANGA-MD FB DOWNLOAD-*
+  
 📽️ *Title*: ${result.title}
 `;
 
