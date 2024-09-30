@@ -6,7 +6,7 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "vNNlQbgI#PYCMry0M_0eacsvxAUI0GbG54-RgdTe9BQn_5esfR1E",
-ALIVE_IMG : process.env.ALIVE_IMG || "https://telegra.ph/file/99312f6ecbfa4d9bfd3b4.jpg",
-ALIVE_MSG : process.env.ALIVE_MSG || "*wihanga-md ALLIVE NOW",
+ALIVE_IMG : process.env.ALIVE_IMG || "https://chat.wh",
+ALIVE_MSG : process.env.ALIVE_MSG || "*WIHANGA-MD ALLIVE NOW (TYPE MENU TO GET COMMAND LIST)*",
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 };
