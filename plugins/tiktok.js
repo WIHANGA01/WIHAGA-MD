@@ -36,7 +36,7 @@ if (!q) reply ('Enter Query Link!');
       fs.writeFileSync(`./${randomName}`, videoBuffer);
 
       // Send the video using vajira.sendMessage with the saved video
-      await conn.sendMessage(from, { video: fs.readFileSync(`./${randomName}`), mimetype: 'video/mp4', caption: 'Downloaded by manu botwa' }, { quoted: mek });
+      await conn.sendMessage(from, { video: fs.readFileSync(`./${randomName}`), mimetype: 'video/mp4', caption: 'DOWNLOAD BY WIHANGA-MD' }, { quoted: mek });
 
       // Delete the temporary file
       fs.unlinkSync(`./${randomName}`);
