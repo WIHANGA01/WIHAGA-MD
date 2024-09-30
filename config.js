@@ -5,8 +5,8 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID,
-ALIVE_IMG : process.env.ALIVE_IMG || "https://telegra.ph/file/99312f6ecbfa4d9bfd3b4.jpg",
-ALIVE_MSG : process.env.ALIVE_MSG || "*🤖𝐇𝐞𝐲 𝐈'M WIHANGA🤍 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐁𝐨𝐭⚡*\n\n*🔔𝐈'𝐦 𝐀𝐥𝐢𝐯𝐞 𝐍𝐨𝐰🎠*\n\n*⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : ©wihanga*",
+SESSION_ID: process.env.SESSION_ID || "vNNlQbgI#PYCMry0M_0eacsvxAUI0GbG54-RgdTe9BQn_5esfR1E",
+ALIVE_IMG : process.env.ALIVE_IMG || "https://github.com/user-attachments/assets/ac71a7f5-7272-4d0b-91ca-8461bbf3d5f9",
+ALIVE_MSG : process.env.ALIVE_MSG || "*🤖𝐇𝐞𝐲 𝐈'M WIHANGA-MD⚡*\n\n*🔔𝐈'𝐦 𝐀𝐥𝐢𝐯𝐞 𝐍𝐨𝐰🎠*\n\n*⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : ©wihanga*",
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 };
