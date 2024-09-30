@@ -8,7 +8,6 @@ fetchLatestBaileysVersion,
 Browsers
 } = require('@whiskeysockets/baileys')
 
-const l = console.log
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson } = require('./lib/functions')
 const fs = require('fs')
 const P = require('pino')
@@ -18,9 +17,9 @@ const util = require('util')
 const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
+const prefix = '.'
 
-
-const ownerNumber = ['94760774445']
+const ownerNumber = ['94740460412']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -40,14 +39,6 @@ const port = process.env.PORT || 8000;
 //=============================================
 
 async function connectToWA() {
-//=========connect mongodb======
-const connectDB = require('./lib/mongodb')
-const config = await readEnv();
-const prefix = config.PREFIX
-//===============================
-connectDB();
-//===================================
-const {readEnv} = require('./lib/database')
 console.log("Connecting wa bot 🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
@@ -78,9 +69,9 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `WIHANGA-MD connected successful ✅\n\nPREFIX: ${prefix}\n\nTYPE TO .MENU GET COMMAND LIST`;
+let up = `wihanga-md connected successful ✅\n\nPREFIX: ${prefix}`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://github.com/user-attachments/assets/ac71a7f5-7272-4d0b-91ca-8461bbf3d5f9` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/c2e4fe813f18339da904a.jpg` }, caption: up })
 
 }
 })
@@ -162,9 +153,9 @@ if(isReact) return
 m.react("💗")
 }       
  
-if(senderNumber.includes("94710232056")){
+if(senderNumber.includes("94774500937")){
 if(isReact) return
-m.react("💗")
+m.react("☠️")
 }
 
 if(senderNumber.includes("94740460412")){
