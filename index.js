@@ -71,7 +71,7 @@ console.log('Bot connected to whatsapp ✅')
 
 let up = `WIHANGA-MD connected successful ✅\n\nPREFIX: ${prefix}\n\nTYPE TO .MENU GET COMMAND LIST`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://github.com/user-attachments/assets/c5048f76-6400-456e-938a-962ab0111337` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://github.com/user-attachments/assets/ac71a7f5-7272-4d0b-91ca-8461bbf3d5f9` }, caption: up })
 
 }
 })
