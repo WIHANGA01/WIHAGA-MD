@@ -154,6 +154,21 @@ let { data } = await axios.get(url)
 for (vr in data){
 if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
  }}
+//===========================autoreply================================
+
+if (config.AUTO_VOICE === 'true') {
+const filePath = path.join(__dirname, '../my_data/autoreply.json');
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    for (const text in data) {
+        if (body.toLowerCase() === text.toLowerCase()) {
+            const config = await readEnv();
+            if (config.AUTO_REPLY === 'true') {
+                //if (isOwner) return;        
+                await m.reply(data[text])
+            
+            }}
+//====================================================================
+        
 
 //========OwnerReact========            
          
