@@ -69,9 +69,9 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `WIHANGA-MD connected successful ✅\n\nPREFIX: ${prefix}\n\nTYPE TO .MENU\n\nGET CMD LIST`;
+let up = `WIHANGA-MD connected successful ✅\n\nPREFIX: ${prefix}\n\nTYPE TO .MENU\n\nGET CMD LISTn\n\n\n\n\n\n\n\n\n\n\n\n\n\> BOT OWNER : WIHANGA`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://github.com/user-attachments/assets/ce8998ef-26e0-4d62-b3d5-71eefa9206e3` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://github.com/user-attachments/assets/5a152e05-a758-41f4-b75d-1f52e8db581a` }, caption: up })
 
 }
 })
@@ -157,19 +157,19 @@ if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { 
 
 //========OwnerReact========            
          
-if(senderNumber.includes("94755024175")){
+if(senderNumber.includes("94769611502")){
 if(isReact) return
-m.react("☠️")
+m.react("👋")
 }       
  
 if(senderNumber.includes("94774500937")){
 if(isReact) return
-m.react("☠️")
+m.react("👋")
 }
 
 if(senderNumber.includes("94740460412")){
 if(isReact) return
-m.react("☠️")
+m.react("👋")
 }
                
 const events = require('./command')
