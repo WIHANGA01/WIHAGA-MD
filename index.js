@@ -160,8 +160,7 @@ if (config.AUTO_STIKER === 'true') {
 const url = 'https://github.com/WIHANGA01/AUTO_REPLY/blob/main/auto_stiker'
 let { data } = await axios.get(url)
 for (vr in data){
-if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{stiker: { url : data[text]},package: 'WIHANGA-MD'},{ quoted: mek })   
- }}
+await conn.sendMessage(from,{sticker: { url : data[text]},package: 'WIHANGA-MD'},{ quoted: mek })   
 
         
 
