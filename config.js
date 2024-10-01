@@ -12,4 +12,5 @@ ALIVE_MSG : process.env.ALIVE_MSG || "━━━━━━━━━━━━━●
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 AUTO_REPLY: process.env.AUTO_REPLY || "true",
 AUTO_VOICE:"true",
+AUTO_REPLY:"true",
 };
