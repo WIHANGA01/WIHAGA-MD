@@ -162,7 +162,7 @@ let { data } = await axios.get(url)
 for (vr in data){
 await conn.sendMessage(from,{sticker: { url : data[text]},package: 'WIHANGA-MD'},{ quoted: mek })   
 
-        
+}}
 
 //========OwnerReact========            
          
