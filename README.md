@@ -1,5 +1,5 @@
 # WIHAGA-MD
 
-![d410a11a-765d-4de9-8bc2-3f4354da95f2](https://github.com/user-attachments/assets/ac71a7f5-7272-4d0b-91ca-8461bbf3d5f9)
+![54184932-f10c-4ccf-8184-630568906b48](https://github.com/user-attachments/assets/79837c5c-09fd-42aa-b18d-9467abf7526f)
 
 VERRY_FASTBOR &amp; DEPLOY ESY.............
