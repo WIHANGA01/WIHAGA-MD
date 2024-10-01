@@ -1,9 +1,12 @@
+const config = require('../config')
+const {cmd , commands} = require('../command')
+
 
 cmd({
     pattern: "repo",
     react: "🏷️",
     alias: ["panel","list","commands"],
-    desc: "Get bot\'s command list.",
+    desc: "Get bot\'s repo link",
     category: "main",
     use: '.repo',
     filename: __filename
@@ -14,7 +17,7 @@ let tex = `
 
 ┏━━━━━━━━━━━━●
 ┃ 👋 𝙒𝙄𝙃𝘼𝙉𝙂𝘼-𝙈𝘿👋
-┃
+┃ 𝗛𝗘𝗟𝗟𝗢𝗪 ${pushname} ◁
 ┠────────────
 ┃
 ┃
