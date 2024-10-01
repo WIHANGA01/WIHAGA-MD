@@ -21,7 +21,7 @@ let tex = `
 ┠────────────
 ┃
 ┃
-🪄 ◁ 𝙍𝙀𝙋𝙊 :
+🪄 ◁ 𝙍𝙀𝙋𝙊 : 
 ┃
 ┃
 ┃
@@ -29,7 +29,7 @@ let tex = `
 ┃
 ┃
 ┃
-🪄 ◁ 𝙒𝘼 𝗡𝗨𝗠𝗕𝗘𝗥 :
+🪄 ◁ 𝙒𝘼 𝗡𝗨𝗠𝗕𝗘𝗥 : 
 ┃ 
 ┃
 ┃
@@ -46,7 +46,7 @@ let tex = `
 `
 
 
-return await conn.sendMessage(from,{image: {url: config.MENU_IMG},caption: tex},{quoted: mek})
+return await conn.sendMessage(from,{image: {url: config.REPO_IMG},caption: tex},{quoted: mek})
 }catch(e){
 console.log(e)
 reply(`${e}`)
