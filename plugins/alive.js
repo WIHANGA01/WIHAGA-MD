@@ -65,7 +65,7 @@ let tex = `
 🤍 ◁ 𝗪𝗛𝗔𝗧𝗦 𝗔𝗣𝗣 : +94769611502
 ┠───────────
 🧬 ◁ 𝗚𝗥𝗢𝗨𝗣:https://chat.whatsapp.com/FHv6PtyT9VPDBCB93v77Zo
-📡◁ 𝙍𝙀𝙋𝙊 :
+📡◁ 𝙍𝙀𝙋𝙊 :https://github.com/WIHANGA01/WIHAGA-MD
 🪄◁ 𝙁𝘽 : 𝚠𝚒𝚑𝚊𝚗𝚐𝚊 𝚊𝚗𝚞𝚑𝚊𝐬
 🎊◁ 𝙏𝙄𝙆 𝙏𝙊𝙆: 𝚠𝚒_𝚘𝚏𝚏𝚒𝚌𝚒𝚊𝚕
 🪅◁ 𝙔𝙏 : 𝚠𝚒_𝚘𝚏𝚏𝚒𝚌𝚒𝚊𝚕
