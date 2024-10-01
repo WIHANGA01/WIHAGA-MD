@@ -51,7 +51,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 let tex = `
-👋🏻𝗛𝗘𝗬 𝗠𝗬 @push name 𝗙𝗥𝗜𝗘𝗡𝗗 ッ 👋🏻
+👋🏻𝗛𝗘𝗬 𝗠𝗬 ${pushname} 𝗙𝗥𝗜𝗘𝗡𝗗 ッ 👋🏻
 
 *😹 හෙලොව් මගේ රත්තරං යාලුවේ 😹*
 
