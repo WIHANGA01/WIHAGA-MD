@@ -10,4 +10,5 @@ ALIVE_IMG : process.env.ALIVE_IMG || "https://github.com/user-attachments/assets
 ALIVE_MSG : process.env.ALIVE_MSG || "*WIHANGA-MD ALLIVE NOW |*",
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
 AUTO_REPLY: process.env.AUTO_REPLY || "true",
+AUTO_VOICE:"true",
 };
