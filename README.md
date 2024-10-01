@@ -4,5 +4,17 @@
 
 ## VERRY_FAST BOT AND QUIK BOT
 
-## BOT PAIRE
-https://pair-web-public.koyeb.app/
+<hr>
+<b>GET SESSION ID VIA PAIR CODE</b>
+
+<a href='https://pair-web-public.koyeb.app/' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/Click here to get your session id-blue?style=for-the-badge&logo=opencv&logoColor=white'/></a>
+
+<hr>
+<b><summary>𝗦𝗢𝗖𝗜𝗔𝗟 𝗧𝗬𝗣𝗘𝗦</summary><br>
+
+## CONTACT OWNER
+
+[![vajira](https://telegra.ph/file/99460844d012cad1b7ee4.jpg)](https://wa.me/94769611502)
+<hr>
+</details>
+
