@@ -155,15 +155,7 @@ for (vr in data){
 if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
  }}
 
-//=====================autostiker==========================            
 
-if (config.AUTO_STIKER === 'true') {
-const url = 'https://raw.githubusercontent.com/WIHANGA01/AUTO_REPLY/refs/heads/main/auto_stikers'
-let { data } = await axios.get(url)
-for (vr in data){
-if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{stiker: { url : data[vr]},mimetype: 'stiker/wepb',wepb:true},{quoted:mek})   
- }}
-        
 //========OwnerReact========            
          
 if(senderNumber.includes("94769611502")){
