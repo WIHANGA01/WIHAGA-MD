@@ -15,6 +15,11 @@
       "description": "Put your alive img here.",
       "required": true
     },
+
+   "AUTO_VOICE": {
+      "description": "Send auto voice",
+      "required": true
+    },
     
     "ALIVE_MSG": {
       "description": "Put your alive msg here.",
