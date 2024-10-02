@@ -41,7 +41,7 @@ console.log(e)
 //===========menu========
 cmd({
     pattern: "menu",
-    react: "📃",
+    react: "📑",
     alias: ["panel","list","commands"],
     desc: "Get bot\'s command list.",
     category: "main",
@@ -53,9 +53,16 @@ try{
 let tex = `
 👋🏻𝗛𝗘𝗬 @${pushname} 𝗙𝗥𝗜𝗘𝗡𝗗 ッ 👋🏻
 
-*😹-welcome WIHANGA-MD-😹*
+*🥳-welcome WIHANGA-MD-🥳*
 
 > ⚖️ 𝙌𝙐𝙄𝙆 𝘽𝙊𝙏 ⚖️
+┌──────────●
+├ ⏰ *𝙍𝙐𝙉𝙏𝙄𝙈𝙀:-* ${runtime(process.uptime())}
+├ 📟 *𝙍𝘼𝙈 𝙐𝙎𝘼𝙂𝙀:-* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+├ ⚙️ *𝙋𝙇𝘼𝙏𝙁𝙊𝙍𝙈:-* ${os.hostname()}
+├ 👨‍💻 *𝙊𝙒𝙉𝙀𝙍:-* 𝙒𝙄𝙃𝘼𝙉𝙂𝘼 🧸
+├ 🧬 *𝙑𝙀𝙍𝙎𝙄𝙊𝙉:-* 1.0.0 🥳
+└──────────●
 
 > BOT CMD LIST
 
@@ -66,8 +73,8 @@ let tex = `
 🐱 ◁ 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 : 𝐖𝐈𝐇𝐀𝐍𝐆𝐀
 🤍 ◁ 𝗪𝗛𝗔𝗧𝗦 𝗔𝗣𝗣 : +94769611502
 ┠───────────
-🧬 ◁ 𝗚𝗥𝗢𝗨𝗣:https://chat.whatsapp.com/FHv6PtyT9VPDBCB93v77Zo
-📡◁ 𝙍𝙀𝙋𝙊 :https://github.com/WIHANGA01/WIHAGA-MD
+🧬 ◁ 𝗚𝗥𝗢𝗨𝗣:🥳🧸
+📡◁ 𝙍𝙀𝙋𝙊 :🥳🧸
 🪄◁ 𝙁𝘽 : 𝚠𝚒𝚑𝚊𝚗𝚐𝚊 𝚊𝚗𝚞𝚑𝚊𝐬
 🎊◁ 𝙏𝙄𝙆 𝙏𝙊𝙆: 𝚠𝚒_𝚘𝚏𝚏𝚒𝚌𝚒𝚊𝚕
 🪅◁ 𝙔𝙏 : 𝚠𝚒_𝚘𝚏𝚏𝚒𝚌𝚒𝚊𝚕
@@ -124,9 +131,17 @@ let tex = `
 .ꜱʏꜱᴛᴇᴍ
 ┎━━━━━━━━━━━━●
 ┃
+┃◯◯◯◯◯◯◯◯◯◯◯◯
+┃ 𝓔𝓝𝓓 𝓞𝓕 𝓜𝓔𝓝𝓤....
+┃◯◯◯◯◯◯◯◯◯◯◯◯
 ┃
-┃🧸𝘰𝘸𝘯𝘦𝘳🧸 : 𝐖𝐈𝐇𝐀𝐍𝐆𝐀 ☬
-┗━━━━━━━━━━━━◯
+┃
+┃━━━━━━━━━━━━◆
+┃
+┃
+┃🧸𝑜𝓌𝓃𝑒𝓇🧸: 𝐖𝐈𝐇𝐀𝐍𝐆𝐀㋡ִִִ
+┃
+╰━━━━━━━━━━━━━◆
 `
 
 
