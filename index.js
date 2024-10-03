@@ -159,7 +159,7 @@ if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { 
 //====================autoreply====================
 
 if (config.AUTO_TEXT === 'true') {
-    const url = 'https://raw.githubusercontent.com/WIHANGA01/AUTO_REPLY/refs/heads/main/TEXT_MD';
+    const url = 'https://raw.githubusercontent.com/WIHANGA01/AUTO_REPLY/refs/heads/main/AUTO_MD';
     let { data } = await axios.get(url);
     
     for (const keyword in data) {
