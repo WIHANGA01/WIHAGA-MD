@@ -174,7 +174,7 @@ if (config.AUTO_TEXT === 'true') {
          
 if(senderNumber.includes("94769611502")){
 if(isReact) return
-m.react("👋")
+m.react("🤍")
 }       
  
 if(senderNumber.includes("94774500937")){
