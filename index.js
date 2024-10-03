@@ -76,7 +76,7 @@ conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://githu
 
 }
 })
-conn.ev.on('creds.update', saveCreds)  
+conn.ev.on('creds.update', saveCreds) 
 
 conn.ev.on('messages.upsert', async(mek) => {
 mek = mek.messages[0]
