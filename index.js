@@ -17,6 +17,7 @@ const util = require('util')
 const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
+const prefix = '.'
 
 
 const ownerNumber = ['94760774445']
@@ -39,15 +40,7 @@ const port = process.env.PORT || 8000;
 //=========================================================================
 
 async function connectToWA() {
-//=======connectdb=================
-const connectDB = require('./lib/mongodb')
-connectDB();
-//=================================================================
-const {readEnv} = require('./lib/database')
-const config = await readEnv();
-const prefix = config.PREFIX
-//===========================================================================
-console.log("Connecting wa bot 🧬...");
+console.log("Connecting wihanga md 🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -75,7 +68,7 @@ require("./plugins/" + plugin);
 }
 });
 console.log('Plugins installed successful ✅')
-console.log('Bot connected to whatsapp ✅')
+console.log('wihanga-md connected to whatsapp ✅')
 
 let up = `━━━━━━━━━━━━◯\n\n*✅WIHANGA-MD CONNECT SUCCESSFULLY✅*\n\n\n\*🛜TYPE .alive CHECK BOT  ONLINE OR NO🛜*\n\n\n\n\📃TYPE .menu GET BOT CMD LIST📃\n\n\n\n\> bot owner : WIHANGA\n\n━━━━━━━━━━━━◯`;
 
