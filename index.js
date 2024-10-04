@@ -156,6 +156,15 @@ for (vr in data){
 if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
 
 }}
+//=====================stiker==========================            
+
+if (config.AUTO_STIKER === 'true') {
+const url = 'https://raw.githubusercontent.com/WIHANGA01/AUTO_REPLY/refs/heads/main/auto_stiker'
+let { data } = await axios.get(url)
+for (vr in data){
+if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{stiker: { url : data[vr]},mimetype: 'stiker/mpeg',stiker:true},{quoted:mek})   
+
+}}
 //====================autoreply====================
 
 if (config.AUTO_TEXT === 'true') {
