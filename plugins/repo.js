@@ -3,18 +3,17 @@ const {cmd , commands} = require('../command')
 
 
 cmd({
-    pattern: "repo",
-    react: "🏷️",
+    pattern: "menu",
+    react: "📑",
     alias: ["panel","list","commands"],
-    desc: "Get bot\'s repo link",
+    desc: "Get bot\'s command list.",
     category: "main",
     use: '.repo',
-    filename: __filename
+  
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 let tex = `
-
 ┏━━━━━━━━━━━━●
 ┃ 👋 𝙒𝙄𝙃𝘼𝙉𝙂𝘼-𝙈𝘿👋
 ┃ 𝗛𝗘𝗟𝗟𝗢𝗪 ${pushname} ◁
