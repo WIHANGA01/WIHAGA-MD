@@ -20,7 +20,7 @@ const { File } = require('megajs')
 const prefix = '.'
 
 
-const ownerNumber = ['94760774445']
+const ownerNumber = ['94769611502']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -168,15 +168,10 @@ if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{stiker: {
 //====================autoreply====================
 
 if (config.AUTO_TEXT === 'true') {
-    const url = 'https://raw.githubusercontent.com/WIHANGA01/AUTO_REPLY/refs/heads/main/AUTO_MD';
-    let { data } = await axios.get(url);
-    
-    for (const keyword in data) {
-        if ((new RegExp(`\\b${keyword}\\b`, 'gi')).test(body)) {
-            conn.sendMessage(from, { text: data[keyword] }, { quoted: mek });
-        }
-    }
-}
+const url = 'https://raw.githubusercontent.com/WIHANGA01/AUTO_REPLY/refs/heads/main/AUTO_MD';
+let { data } = await axios.get(url)
+for (vr in data){
+if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{massage: { url : data[vr]},mimetype: 'txt/massage',typing:true},{quoted:mek})   
 
 
 //========OwnerReact========            
