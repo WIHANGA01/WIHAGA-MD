@@ -12,8 +12,7 @@
 
 <a href='https://wihanga-pair-web-0f9d14c4cf4a.herokuapp.com/' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/Click here to get your session id-blue?style=for-the-badge&logo=opencv&logoColor=white'/></a>
 
-<hr>
-<b><summary>𝗦𝗢𝗖𝗜𝗔𝗟 𝗧𝗬𝗣𝗘𝗦</summary><br>
+
 
 ## CONTACT OWNER
 
