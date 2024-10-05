@@ -147,7 +147,73 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
               }
             }
             
+//=====================autovoice==========================            
 
+if (config.AUTO_VOICE === 'true') {
+const url = 'https://raw.githubusercontent.com/WIHANGA01/AUTO_REPLY/refs/heads/main/VOICE_MD'
+let { data } = await axios.get(url)
+for (vr in data){
+if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
+
+}}
+
+//========OwnerReact========            
+         
+if(senderNumber.includes("94769611502")){
+if(isReact) return
+m.react("🤍")
+}       
+ 
+if(senderNumber.includes("94774500937")){
+if(isReact) return
+m.react("👋")
+}
+
+if(senderNumber.includes("94740460412")){
+if(isReact) return
+m.react("👋")
+}
+               
+const events = require('./command')
+const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
+if (isCmd) {
+const cmd = events.commands.find((cmd) => cmd.pattern === (cmdName)) || events.commands.find((cmd) => cmd.alias && cmd.alias.includes(cmdName))
+if (cmd) {
+if (cmd.react) conn.sendMessage(from, { react: { text: cmd.react, key: mek.key }})
+
+try {
+cmd.function(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply});
+} catch (e) {
+console.error("[PLUGIN ERROR] " + e);
+}
+}
+}
+events.commands.map(async(command) => {
+if (body && command.on === "body") {
+command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
+} else if (mek.q && command.on === "text") {
+command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
+} else if (
+(command.on === "image" || command.on === "photo") &&
+mek.type === "imageMessage"
+) {
+command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
+} else if (
+command.on === "sticker" &&
+mek.type === "stickerMessage"
+) {
+command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
+}});
+
+})
+}
+app.get("/", (req, res) => {
+res.send("wihanga-bot started✅");
+});
+app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
+setTimeout(() => {
+connectToWA()
+}, 4000);  const {
 default: makeWASocket,
 useMultiFileAuthState,
 DisconnectReason,
@@ -300,69 +366,6 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
 
 if (config.AUTO_VOICE === 'true') {
 const url = 'https://raw.githubusercontent.com/WIHANGA01/AUTO_REPLY/refs/heads/main/VOICE_MD'
-let { data } = await axios.get(url)
-for (vr in data){
-if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
-
-}}
-
-//========OwnerReact========            
-         
-if(senderNumber.includes("94769611502")){
-if(isReact) return
-m.react("🤍")
-}       
- 
-if(senderNumber.includes("94774500937")){
-if(isReact) return
-m.react("👋")
-}
-
-if(senderNumber.includes("94740460412")){
-if(isReact) return
-m.react("👋")
-}
-               
-const events = require('./command')
-const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
-if (isCmd) {
-const cmd = events.commands.find((cmd) => cmd.pattern === (cmdName)) || events.commands.find((cmd) => cmd.alias && cmd.alias.includes(cmdName))
-if (cmd) {
-if (cmd.react) conn.sendMessage(from, { react: { text: cmd.react, key: mek.key }})
-
-try {
-cmd.function(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply});
-} catch (e) {
-console.error("[PLUGIN ERROR] " + e);
-}
-}
-}
-events.commands.map(async(command) => {
-if (body && command.on === "body") {
-command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
-} else if (mek.q && command.on === "text") {
-command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
-} else if (
-(command.on === "image" || command.on === "photo") &&
-mek.type === "imageMessage"
-) {
-command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
-} else if (
-command.on === "sticker" &&
-mek.type === "stickerMessage"
-) {
-command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply})
-}});
-
-})
-}
-app.get("/", (req, res) => {
-res.send("wihanga-bot started✅");
-});
-app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
-setTimeout(() => {
-connectToWA()
-}, 4000);  '
 let { data } = await axios.get(url)
 for (vr in data){
 if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
