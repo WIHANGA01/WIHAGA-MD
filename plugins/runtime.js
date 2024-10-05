@@ -9,11 +9,12 @@ cmd({
     category: "main",
     react: "📡",
     filename: __filename
+
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{ 
 
-let status =` *📟 Runtime:-  ${runtime(process.uptime())}*\n\n\nගොඩක් වෙලා ඉදම් වැඩ 🥱`
+let status =` *📟 Runtime:-  ${runtime(process.uptime())}*\n\nගොඩක් වෙලා ඉදම් වැඩ 🥱`
 return reply(`${status}`)
 }catch(e){
 console.log(e)
