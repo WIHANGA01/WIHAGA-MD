@@ -147,10 +147,7 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
               }
             }
             
-//=====================autovoice==========================            
 
-if (config.AUTO_VOICE === 'true') {
-const url = 'const {
 default: makeWASocket,
 useMultiFileAuthState,
 DisconnectReason,
