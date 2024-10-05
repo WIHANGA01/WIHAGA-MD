@@ -72,7 +72,7 @@ console.log('wihanga-md connected to whatsapp ✅')
 
 let up = `━━━━━━━━━━━━◯\n\n*✅ＷＩＨＡＮＧＡ ＭＤ ＣＯＮＮＥＣＴ✅*\n\n🥳ＳＵＣＣＥＳＦＵＬＬＹ\n\n🥳*🛜𝙏𝙔𝙋𝙀 .𝙖𝙡𝙞𝙫𝙚 𝘾𝙃𝙀𝘾𝙆 𝘽𝙊𝙏 𝙊𝙉𝙇𝙄𝙉𝙀 𝙊𝙍 𝙉𝙊🛜*\n\n\n\n\📃𝙏𝙔𝙋𝙀 .𝗺𝗲𝗻𝘂 𝙂𝙀𝙏 𝘽𝙊𝙏 𝘾𝙈𝘿 𝙇𝙄𝙎𝙏╭━━━━━━━━━━━━◆📃\n\n\n\n\🧸𝘉𝘖𝘛 𝘖𝘞𝘕𝘌𝘙🧸 :༺𝙒𝙄𝙃𝘼𝙉𝙂𝘼༻\n\n━━━━━━━━━━━━◯`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://github.com/user-attachments/assets/5a152e05-a758-41f4-b75d-1f52e8db581a` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { video: { url: `https://github.com/user-attachments/assets/3b2eb5fc-0fe3-41de-9821-5ba49dbb015b` }, caption: up })
 
 }
 })
