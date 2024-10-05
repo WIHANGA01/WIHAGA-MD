@@ -14,7 +14,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const message = await conn.sendMessage(from, { text: 'Pong..' })
         const endTime = Date.now()
         const ping = endTime - startTime
-        await conn.sendMessage(from,{image: {url: config.PING_IMG},caption: `*⚡Ping  : ${ping}MS*` }, { quoted: message })
+        await conn.sendMessage(from,{image: {url: config.PING_IMG},caption: `*⚡𝗪𝗜𝗛𝗔𝗡𝗚𝗔-𝗠𝗗 𝗣𝗜𝗡𝗚 𝗜𝗦⚡ : ${ping}MS*\n\n\n\n𝗪𝗜𝗛𝗔𝗡𝗚𝗔-𝗠𝗗 𝗦𝗣𝗣𝗘𝗘𝗗 හරිද ළමයෝ 😾` }, { quoted: message })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
