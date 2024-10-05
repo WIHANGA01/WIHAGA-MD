@@ -3,10 +3,10 @@ const {cmd , commands} = require('../command')
 
 
 cmd({
-    pattern: "menu",
+    pattern: "repo",
     react: "📑",
     alias: ["panel","list","commands"],
-    desc: "Get bot\'s command list.",
+    desc: "Get bot repo link.",
     category: "main",
     use: '.repo',
   
@@ -24,7 +24,7 @@ let tex = `
 ┃
 ┃
 ┃
-🪄 ◁ 𝙔𝙏 𝘾𝙃𝘼𝙉𝙀𝙇 :
+🪄 ◁ 𝙔𝙏 𝘾𝙃𝘼𝙉𝙀𝙇 : 𝗡𝗢𝗧 𝗬𝗧 😌
 ┃
 ┃
 ┃
