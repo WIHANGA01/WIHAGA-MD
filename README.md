@@ -10,7 +10,7 @@
 <hr>
 <b>GET SESSION ID VIA PAIR CODE</b>
 
-<a href='https://wihanga-pair-web-0f9d14c4cf4a.herokuapp.com/' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/Click here to get your session id-blue?style=for-the-badge&logo=opencv&logoColor=white'/></a>
+<a href='https://wihanga-pair-web-c02073beb133.herokuapp.com/' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/Click here to get your session id-blue?style=for-the-badge&logo=opencv&logoColor=white'/></a>
 
 
 
