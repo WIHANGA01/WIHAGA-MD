@@ -30,8 +30,8 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
         let data = await fetchJson(`${baseUrl}/api/fdown?url=${q}`)
         reply("*ඩව්න්ලෝඩ් වෙන ගමන් සුට්ටක් ඉන්න ළමයෝ....😻💓*")
         //send video (hd,sd)
-        await conn.sendMessage(from, { video: { url: data.data.hd }, mimetype: "video/mp4", caption: `🧸𝗪𝗜𝗛𝗔𝗡𝗚𝗔-𝗠𝗗🧸\n\n💫 𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁💫  ${yourName}` }, { quoted: mek })
-         
+        await conn.sendMessage(from, { video: { url: data.data.hd }, mimetype: "video/mp4", caption: `🧸𝗪𝗜𝗛𝗔𝗡𝗚𝗔-𝗠𝗗🧸\n\n💫 HD-𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁💫  ${yourName}` }, { quoted: mek })
+        await conn.sendMessage(from, { video: { url: data.data.sd }, mimetype: "video/mp4", caption: `🧸𝗪𝗜𝗛𝗔𝗡𝗚𝗔-𝗠𝗗🧸\n\n💫 SD-𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁💫  ${yourName}` }, { quoted: mek })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
