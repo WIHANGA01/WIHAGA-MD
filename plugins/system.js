@@ -21,7 +21,7 @@ let status = `┌─────────────────────
 
 > WIHANGA-MD ジ 
 `
-return reply(`${status}`)
+return await conn.sendMessage(from,{image: {url: config.SYS_IMG},caption: status},{quoted: mek})
   
 }catch(e){
 console.log(e)
