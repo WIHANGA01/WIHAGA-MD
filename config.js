@@ -18,5 +18,5 @@ AUTO_REPLY : process.env.AUTO_REPLY || "true",
 AUTO_STIKER : process.env.AUTO_STIKER || "true",
 AUTO_VOICE : "true",
 AUTO_STIKER : "true",
-
+AUTO_REPLY : "true",
 };
