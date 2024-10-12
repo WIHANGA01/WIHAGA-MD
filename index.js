@@ -157,6 +157,7 @@ if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { 
 
 }}
 
+
 //========OwnerReact========            
          
 if(senderNumber.includes("94769611502")){
