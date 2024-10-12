@@ -21,7 +21,7 @@ let status = `┌─────────────────────
 
 > WIHANGA-MD
 `
-await conn.sendMessage(from,{image: {url: config.SYS_IMG},caption: `PING  : ${status}` }, { quoted: message })
+await conn.sendMessage(from,{image: {url: config.SYS_IMG},caption: `status  : ${status}` }, { quoted: message })
 }catch(e){
 console.log(e)
 reply(`${e}`)
