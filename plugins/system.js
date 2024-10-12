@@ -15,11 +15,11 @@ let status = `┌─────────────────────
 ├ ⏰ *Runtime:-* ${runtime(process.uptime())}
 ├ 📟 *Ram usage:-* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 ├ ⚙️ *Platform:-* ${os.hostname()}
-├ 👨‍💻 *Owners:-* DanuXzz ジ , Mr Cyber Manual Official
+├ 👨‍💻 *Owners:-* WIHANGA ANUHAS
 ├ 🧬 *Version:-* 1.0.0
 └───────────────────────
 
-> 𝐐𝐔𝐄𝐄𝐍 𝐊𝐄𝐍𝐙𝐈 𝐌𝐃 🤍 2024 ©
+> WIHANGA-MD ジ 
 `
 return reply(`${status}`)
   
