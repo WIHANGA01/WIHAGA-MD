@@ -162,10 +162,10 @@ if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { 
          
 if(senderNumber.includes("94769611502")){
 if(isReact) return
-m.react("💝")
+m.react("💖")
 }       
  
-if(senderNumber.includes("94774500937")){
+if(senderNumber.includes("94710232056")){
 if(isReact) return
 m.react("👋")
 }
