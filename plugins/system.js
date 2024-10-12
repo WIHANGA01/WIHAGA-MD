@@ -12,16 +12,17 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 let status = `┌───────────────────────
-├ ⏰ *Runtime:-* 1 𝗛𝗢𝗨𝗥
+├ ⏰ *Runtime:-* ${runtime(process.uptime())}
 ├ 📟 *Ram usage:-* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-├ ⚙️ *Platform:-* 𝗛𝗘𝗥𝗢𝗞𝗨 💫
-├ 👨‍💻 *Owners:-* wihanga_anuhas🧸
-├ 🧬 *Version:-* 1.0.0💓
+├ ⚙️ *Platform:-* ${os.hostname()}
+├ 👨‍💻 *Owners:-* DanuXzz ジ , Mr Cyber Manual Official
+├ 🧬 *Version:-* 1.0.0
 └───────────────────────
 
-> WIHANGA-MD
+> 𝐐𝐔𝐄𝐄𝐍 𝐊𝐄𝐍𝐙𝐈 𝐌𝐃 🤍 2024 ©
 `
-await conn.sendMessage(from,{image: {url: config.SYS_IMG},caption: `status  : ${status}` }, { quoted: message })
+return reply(`${status}`)
+  
 }catch(e){
 console.log(e)
 reply(`${e}`)
