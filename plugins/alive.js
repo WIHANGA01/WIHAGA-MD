@@ -6,11 +6,28 @@ cmd({
     pattern: "alive",
     desc: "Check bot online or no.",
     category: "main",
+    use: '.alive',
     filename: __filename
+
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-return await conn.sendMessage(from,{image: {url: config.ALIVE_IMG},caption: config.ALIVE_MSG},{quoted: mek})
+let tex = `
+╭┉┉┉┉┉┉┉┉┉┉
+▮ *HEY WIHANGA-MD*
+▮ *ALLIVE NOW*
+▮ 💓💓💓💓💓💓
+▮
+▮
+▮
+▮
+▮
+▮
+╰┉┉┉┉┉┉┉┉┉
+`
+
+
+return await conn.sendMessage(from,{image: {url: config.ALLIVE_IMG},caption: tex},{quoted: mek})
 }catch(e){
 console.log(e)
 reply(`${e}`)
@@ -53,18 +70,18 @@ let tex = `
 🪅◁ 𝙔𝙏 : 𝚠𝚒_𝚘𝚏𝚏𝚒𝚌𝚒𝚊𝚕
 
 
-┏━━━━━━━━━━━━●
+┏━━━━━━━━━●
 ┃
 ┃
 ◁◯😼 𝚆𝙸𝙷𝙰𝙽𝙶𝙰-𝙼𝙳 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝙻𝙸𝚂𝚃 😼◯▷
 ┃
 ┃
-┃
-┗━━━━━━━━━━━━●
+
+┗━━━━━━━━●
 
 
 🧬𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙈𝙀𝙉𝙐🧬
-━━━━━━━━━━━━━━●
+━━━━━━━━━●
 
 
  .ꜱᴏɴɢ
@@ -83,7 +100,7 @@ let tex = `
 
 💃🏼𝗦𝗬𝗦𝗧𝗘𝗠 𝗠𝗘𝗡𝗨💃🏼
 
-━━━━━━━━━━━●━━●
+━━━━━━━━━━●
 
 .ꜱʏꜱᴛᴇᴍ
 
@@ -92,29 +109,29 @@ let tex = `
 .ᴀʟɪᴠᴇ 
 
 🧸𝗔𝗜 𝗠𝗘𝗡𝗨🧸
-━━━━━━━━━━━━━━━●
+━━━━━━━━━━●
 
 .ᴀɪ
 
 🐣𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨 🐣
-━━━━━━━━━━━━━━●
+━━━━━━━━━━━●
 
 .ʀᴇꜱᴛᴀʀᴛ
 
 .ꜱʏꜱᴛᴇᴍ
-┎━━━━━━━━━━━━●
+┎━━━━━━━━━━●
 ┃
 ┃◯◯◯◯◯◯◯◯◯◯◯◯
 ┃ 𝓔𝓝𝓓 𝓞𝓕 𝓜𝓔𝓝𝓤....
 ┃◯◯◯◯◯◯◯◯◯◯◯◯
 ┃
 ┃
-┃━━━━━━━━━━━━◆
+┃━━━━━━━━━━◆
 ┃
 ┃
 ┃🧸𝑜𝓌𝓃𝑒𝓇🧸: 𝐖𝐈𝐇𝐀𝐍𝐆𝐀㋡ִִִ
 ┃
-╰━━━━━━━━━━━━━◆
+╰━━━━━━━━━━━◆
 `
 
 
