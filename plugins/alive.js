@@ -31,7 +31,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 let tex = `
-👋🏻𝗛𝗘𝗬 @${pushname}......ッ 👋🏻
+👋🏻𝗛𝗘𝗬 @${pushname} ッ 👋🏻
 
 *🥳-welcome WIHANGA-MD-🥳*
 
