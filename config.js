@@ -5,7 +5,7 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "jI8AEbLB#dv9vbJqUSZW1lYjMWFMKn1ezxKJdh4Yb53ErNR-DjfE", 
+SESSION_ID: process.env.SESSION_ID || "9jM0jCJK#HGk1usEv-gLJ9hZtGc1ldudi-LW8H1CpOGnwp4N38cg", 
 MONGODB: process.env.MONGODB || "mongodb://mongo:ZOHuvZUjalWCSIOaChWEbVSLoCdVDPTE@junction.proxy.rlwy.net:42713",
 PING_IMG : process.env.PING_IMG || "https://github.com/user-attachments/assets/5970bd48-8cd1-40e9-8c0d-4fad372a1d89",
 SYS_IMG : process.env.SYS_IMG || "https://github.com/user-attachments/assets/813ecbd6-bf45-4766-a83d-79df76e77f14",
