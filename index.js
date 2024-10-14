@@ -8,7 +8,6 @@ fetchLatestBaileysVersion,
 Browsers
 } = require('@whiskeysockets/baileys')
 
-
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson } = require('./lib/functions')
 const fs = require('fs')
 const P = require('pino')
@@ -20,8 +19,7 @@ const axios = require('axios')
 const { File } = require('megajs')
 const prefix = '.'
 
-
-const ownerNumber = ['94769611502']
+const ownerNumber = ['94760774445']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -38,10 +36,10 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 8000;
 
-//=========================================================================
+//=============================================
 
 async function connectToWA() {
-console.log("Connecting wihanga md 🧬...");
+console.log("Connecting wa bot 🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -61,7 +59,7 @@ if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
 connectToWA()
 }
 } else if (connection === 'open') {
-console.log('🥳 Installing... ')
+console.log('😼 Installing... ')
 const path = require('path');
 fs.readdirSync("./plugins/").forEach((plugin) => {
 if (path.extname(plugin).toLowerCase() == ".js") {
@@ -69,15 +67,15 @@ require("./plugins/" + plugin);
 }
 });
 console.log('Plugins installed successful ✅')
-console.log('wihanga-md connected to whatsapp ✅')
+console.log('Bot connected to whatsapp ✅')
 
-let up = `╭━━━━━━━━━━━◓\n\n🪄𝚆𝙸𝙷𝙰𝙽𝙶𝙰 𝙼𝙳🪄\n\n\n🔌 𝙲𝙾𝙽𝙽𝙴𝙲𝚃  𝚂𝚄𝙲𝙲𝙴𝚂𝙵𝚄𝙻𝙻𝚈  🔌\n\n📃𝙩𝙮𝙥𝙚 .мєηυ 𝙜𝙚𝙩 𝙘𝙢𝙙 𝙡𝙞𝙨𝙩📃\n\n🧬𝙩𝙮𝙥𝙚 .𝚊𝚕𝚒𝚟𝚎 𝘤𝘩𝘦𝘤𝘬 𝘣𝘰𝘵 𝘰𝘯𝘭𝘪𝘯𝘦 𝘰𝘳 𝘯𝘰🧬\n\n🎊𝘵𝘺𝘱𝘦 .𝚙𝚒𝚗𝚐 𝘤𝘩𝘦𝘬 𝘣𝘰𝘵 𝘴𝘱𝘦𝘦𝘥\n\n\n╰╼━━━━━━━━━━━●`;
+let up = `━━━━━━━━━━━━◯\n\n*✅WIHANGA-MD CONNECT SUCCESSFULLY✅*\n\n\n\*🛜TYPE .alive CHECK BOT  ONLINE OR NO🛜*\n\n\n\n\📃TYPE .menu GET BOT CMD LIST📃\n\n\n\n\> bot owner : WIHANGA\n\n━━━━━━━━━━━━◯`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { video: { url: `https://github.com/user-attachments/assets/3c52e540-416b-40b7-a2a8-82090046376d` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://github.com/user-attachments/assets/5a152e05-a758-41f4-b75d-1f52e8db581a` }, caption: up })
 
 }
 })
-conn.ev.on('creds.update', saveCreds) 
+conn.ev.on('creds.update', saveCreds)  
 
 conn.ev.on('messages.upsert', async(mek) => {
 mek = mek.messages[0]
@@ -158,14 +156,14 @@ if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { 
 
 }}
 
-//========OwnerReact========            
+        //========OwnerReact========            
          
 if(senderNumber.includes("94769611502")){
 if(isReact) return
-m.react("💖")
+m.react("👋")
 }       
  
-if(senderNumber.includes("94710232056")){
+if(senderNumber.includes("94774500937")){
 if(isReact) return
 m.react("👋")
 }
@@ -209,9 +207,9 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("wihanga-bot started✅");
+res.send("hey, bot started✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
 connectToWA()
-}, 4000);
+}, 4000);  
