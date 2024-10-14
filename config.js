@@ -11,7 +11,6 @@ PING_IMG : process.env.PING_IMG || "https://github.com/user-attachments/assets/5
 SYS_IMG : process.env.SYS_IMG || "https://github.com/user-attachments/assets/813ecbd6-bf45-4766-a83d-79df76e77f14",
 MENU_IMG : process.env.MENU_IMG || "https://github.com/user-attachments/assets/f803fcf9-e171-4096-89a7-8d21c49e912c",
 REPO_IMG : process.env.REPO_IMG || "https://github.com/user-attachments/assets/84ad21e9-b5df-411b-a453-369abd8b4253",
-ALIVE_MSG : process.env.ALIVE_MSG || "━━━━━━━━━━━━━●\n\n\👋🏻𝗪𝗜𝗛𝗔𝗡𝗚𝗔-𝗠𝗗 𝗔𝗟𝗜𝗩𝗘 𝗡𝗢𝗪👋🏻\n\━━━━━━━━━━━━●\n\n📃𝗧𝗬𝗣𝗘 .ᴍᴇɴᴜ 𝗚𝗘𝗧 𝗖𝗠𝗗 𝗟𝗜𝗦𝗧📃\n\n\━━━━━━━━━━━●\n\n\🔮𝗧𝗬𝗣𝗘 .ᴘɪɴɢ 𝗕𝗢𝗧 𝗦𝗣𝗘𝗘𝗗🔮\n\n\n━━━━━━━━━━●\n\n\n📡𝗧𝗬𝗣𝗘 .ꜱʏꜱᴛᴇᴍ 𝗚𝗘𝗧 𝗕𝗢𝗧 𝗦𝗬𝗦𝗧𝗘𝗠 𝗜𝗡𝗙𝗢📡\n\n\n\n\n\> 𝗪𝗜𝗛𝗔𝗡𝗚𝗔-𝗠𝗗 ッ",
 ALIVE_IMG : process.env.ALIVE_IMG || "https://github.com/user-attachments/assets/1db105d7-0068-4879-b1fc-fece3c5f18b4",
 AUTO_READ_STATUS : process.env.AUTO_READ_STATUS || "true",
 AUTO_REPLY : process.env.AUTO_REPLY || "true",
