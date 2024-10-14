@@ -19,7 +19,7 @@ const axios = require('axios')
 const { File } = require('megajs')
 const prefix = '.'
 
-const ownerNumber = ['94740460412']
+const ownerNumber = ['94769611502']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -69,9 +69,9 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `wihanga-md connected successful ✅\n\nPREFIX: ${prefix}`;
+let up = `━━━━━━━━━━━━◯\n\n*✅WIHANGA-MD CONNECT SUCCESSFULLY✅*\n\n\n\*🛜TYPE .alive CHECK BOT  ONLINE OR NO🛜*\n\n\n\n\📃TYPE .menu GET BOT CMD LIST📃\n\n\n\n\> bot owner : WIHANGA\n\n━━━━━━━━━━━━◯`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/c2e4fe813f18339da904a.jpg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://github.com/user-attachments/assets/5a152e05-a758-41f4-b75d-1f52e8db581a` }, caption: up })
 
 }
 })
@@ -146,21 +146,31 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
               }
             }
             
-//========OwnerReact========            
+//=====================autovoice==========================            
+
+if (config.AUTO_VOICE === 'true') {
+const url = 'https://raw.githubusercontent.com/WIHANGA01/AUTO_REPLY/refs/heads/main/VOICE_MD'
+let { data } = await axios.get(url)
+for (vr in data){
+if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
+
+}}
+
+        //========OwnerReact========            
          
-if(senderNumber.includes("94755024175")){
+if(senderNumber.includes("94769611502")){
 if(isReact) return
-m.react("☠️")
+m.react("💖")
 }       
  
 if(senderNumber.includes("94774500937")){
 if(isReact) return
-m.react("☠️")
+m.react("👋")
 }
 
 if(senderNumber.includes("94740460412")){
 if(isReact) return
-m.react("☠️")
+m.react("👋")
 }
                
 const events = require('./command')
