@@ -163,14 +163,14 @@ if(isReact) return
 m.react("💖")
 }       
  
-if(senderNumber.includes("94774500937")){
+if(senderNumber.includes("94766707247{
 if(isReact) return
-m.react("👋")
+m.react("💖")
 }
 
-if(senderNumber.includes("94740460412")){
+if(senderNumber.includes("94770102771")){
 if(isReact) return
-m.react("👋")
+m.react("💖")
 }
                
 const events = require('./command')
