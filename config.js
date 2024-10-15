@@ -12,6 +12,7 @@ SYS_IMG : process.env.SYS_IMG || "https://github.com/user-attachments/assets/813
 MENU_IMG : process.env.MENU_IMG || "https://github.com/user-attachments/assets/f803fcf9-e171-4096-89a7-8d21c49e912c",
 REPO_IMG : process.env.REPO_IMG || "https://github.com/user-attachments/assets/84ad21e9-b5df-411b-a453-369abd8b4253",
 ALIVE_IMG : process.env.ALIVE_IMG || "https://github.com/user-attachments/assets/1db105d7-0068-4879-b1fc-fece3c5f18b4",
+ALIVE_MSG : process.env.ALIVE_MSG || "wihanga-md ALLIVE now\n\n\nHOW CAN HELP YOU...",
 AUTO_READ_STATUS : process.env.AUTO_READ_STATUS || "true",
 AUTO_REPLY : process.env.AUTO_REPLY || "true",
 AUTO_STIKER : process.env.AUTO_STIKER || "true",
