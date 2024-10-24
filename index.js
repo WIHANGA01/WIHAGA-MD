@@ -71,7 +71,7 @@ console.log('Bot connected to whatsapp ✅')
 
 let up = `━━━━━━━━━━━━◯\n\n*✅WIHANGA-MD CONNECT SUCCESSFULLY✅*\n\n\n\*🛜TYPE .alive CHECK BOT  ONLINE OR NO🛜*\n\n\n\n\📃TYPE .menu GET BOT CMD LIST📃\n\n\n\n\> bot owner : WIHANGA\n\n━━━━━━━━━━━━◯`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://github.com/user-attachments/assets/5a152e05-a758-41f4-b75d-1f52e8db581a` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { gif: { url: `https://github.com/user-attachments/assets/01969cbe-13e8-4ba9-af5e-e084071c181d` }, caption: up })
 
 }
 })
